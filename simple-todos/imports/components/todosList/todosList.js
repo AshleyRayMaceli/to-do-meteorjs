@@ -7,9 +7,20 @@ class TodosListCtrl {
   constructor($scope) {
     $scope.viewModel(this);
 
+    this.hideCompleted = false;
+
     this.helpers({
       tasks() {
-        return Tasks.find({}, {
+        const selector = {};
+
+        // if hide complete is checked then filter tasks
+        if(this.getReactively('hideCompleted')) {
+          selector.checked = {
+            $ne: true
+          };
+        }
+
+        return Tasks.find(selector, {
           sort: {
             createdAt: -1
           }
