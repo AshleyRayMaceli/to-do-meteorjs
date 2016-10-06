@@ -1,8 +1,9 @@
-![Passing Tests](test-screenshot.png)
 ![App Screenshot](app-screenshot.png)
 
+![Passing Tests](test-screenshot.png)
+
 # Todo Meteor and Angular App
-## By Ashley Maceli
+### By Ashley Maceli
 
 ## Description
 
@@ -10,7 +11,7 @@ A simple Meteor and Angular app to manage a 'to do' list with features such as c
 
 The Todo app from the Meteor tutorial - https://www.meteor.com/tutorials/angular/creating-an-app
 
-## Known Bugs
+### Known Bugs
 
 No major bugs at this time.
 
@@ -22,14 +23,14 @@ No major bugs at this time.
 * enter the command `meteor` to run
 * go to http://localhost:3000
 
-## Technologies Used
-
-JavaScript, Node.js, Meteor, Angular, MongoDB, Mocha, Chai
-
 ### Running Tests
 
 * Run the command `meteor test --driver-package practicalmeteor:mocha`
 * go to http://localhost:3000
+
+### Technologies Used
+
+JavaScript, Node.js, Meteor, Angular, MongoDB, Mocha, Chai
 
 ### License
 
